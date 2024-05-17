@@ -1,7 +1,6 @@
 "use client"
 import { Icon } from '@iconify/react';
 import Image from "next/image";
-import Me from "@/assets/me.jpg";
 import obj from "@/i18n/zh.json";
 import works from "@/mock/work-experience.json"
 import projects from "@/mock/project-experience.json"
@@ -33,7 +32,7 @@ export default function Home() {
       <div className="book">
         <div className="book-page page-left">
           <div className="profile-page">
-            <Image src={Me} alt=""/>
+            <Image src="/me.jpg" width={180} height={180} alt=""/>
             <h1>{obj.name}</h1>
             <h3>{obj.position}</h3>
             <div className="social-media">
