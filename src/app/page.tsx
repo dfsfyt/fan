@@ -93,7 +93,7 @@ export default function Home() {
                   <p><b>{obj.projectDesc}</b> : {item.projectDesc}</p>
                   <p><b>{obj.responsibility}</b> : {item.responsibility}</p>
                   <p><b>{obj.achiev}</b> : </p>
-                  {Array.isArray(item.achiev) ? item.achiev.map(item => <p>{item}</p>) : <p>{item.achiev}</p>}
+                  {Array.isArray(item.achiev) ? item.achiev.map((item, i) => <p key={i}>{item}</p>) : <p>{item.achiev}</p>}
                 </div>
               )
             }
