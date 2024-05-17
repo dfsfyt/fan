@@ -22,6 +22,7 @@
 @media (prefers-color-scheme: dark) {
   :root {
     --foreground-rgb: 255, 255, 255;
+    --pages-color: linear-gradient(90deg,#000,#222);
     --background-start-rgb: 0, 0, 0;
     --background-end-rgb: 0, 0, 0;
   }
@@ -29,13 +30,13 @@
 
 body {
   color: rgb(var(--foreground-rgb));
-  /* background: linear-gradient(
+  background: linear-gradient(
       to bottom,
       transparent,
       rgb(var(--background-end-rgb))
     )
-    rgb(var(--background-start-rgb)); */
-  background: var(--bg-color);
+    rgb(var(--background-start-rgb));
+  /* background: var(--bg-color); */
 }
 
 @layer utilities {
@@ -247,7 +248,7 @@ body {
   border-radius: 50%;
 }
 .workeduc-content b {
-  color: #333;
+  color: var(--foreground-rgb);
 }
 .workeduc-content h3 {
   margin: .6rem 0;
