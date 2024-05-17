@@ -33,7 +33,7 @@ export default function Home() {
       <div className="book">
         <div className="book-page page-left">
           <div className="profile-page">
-            <Image src={Me || '/me.jpg'} alt=""/>
+            <Image src={Me} alt=""/>
             <h1>{obj.name}</h1>
             <h3>{obj.position}</h3>
             <div className="social-media">
