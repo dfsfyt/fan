@@ -114,7 +114,7 @@ body {
 }
 
 .profile-page h3 {
-  font-size: 1.5rem;
+  font-size: 1.4rem;
   color: var(--main-color);
 }
 
@@ -184,7 +184,7 @@ body {
 .book-page.page-right {
   position: absolute;
   right: 0;
-  font-size: .9rem;
+  font-size: .8rem;
   transform-style: preserve-3d;
   transform-origin: left;
   transition: transform 1s cubic-bezier(0.645, 0.045, 0.355, 1);
@@ -224,7 +224,7 @@ body {
   /*  */
   /* border-left: var(--border); */
   overflow-y: scroll;
-  max-height: 60vh;
+  /* max-height: 60vh; */
   padding: 1rem;
 }
 
@@ -234,7 +234,7 @@ body {
   /* margin-bottom: 1.2rem; */
   /*  */
   border-left: var(--border);
-  padding-bottom: 1.2rem;
+  padding-bottom: 1rem;
 }
 
 .workeduc-box .workeduc-content::before {
@@ -251,7 +251,7 @@ body {
   color: var(--foreground-rgb);
 }
 .workeduc-content h3 {
-  margin: .6rem 0;
+  margin: .25rem 0;
 }
 .workeduc-content .year {
   color: var(--main-color);
