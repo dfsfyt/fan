@@ -26,6 +26,7 @@ export default function Home() {
   return (
     <main className="flex flex-col items-center justify-between">
     <div className="wrapper">
+        <div className="language"><a href="/en">English</a></div>
       <div className="cover cover-left"></div>
       <div className="cover cover-right turn"></div>
 
