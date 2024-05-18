@@ -1,0 +1,15 @@
+[
+    {
+        "id": "edu001",
+        "year": "2011/09-2015/06",
+        "master": "Computer Science and Technology",
+        "school": "ShaoGuan University",
+        "attr": "Bachelor"
+    },{
+        "id": "edu002",
+        "year": "2023/09-2026/01",
+        "master": "Master of Engineering Management",
+        "school": "East China Normal University",
+        "attr": "Master"
+    }
+]
