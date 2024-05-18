@@ -136,10 +136,11 @@ body {
   border: var(--border);
   border-radius: 50%;
   color: var(--main-color);
+  margin-right: .5rem;
 }
 .profile-page .social-media a svg{
-  height: 2rem;
-  width: 2rem;
+  height: 1.5rem;
+  width: 1.5rem;
   font-size: 1.3rem;
   padding: .3rem;
 }
