@@ -339,5 +339,11 @@ body {
   z-index: 20;
 }
 #turn-2 {
+  z-index: 19;
+}
+#turn-3 {
   z-index: 18;
+}
+#turn-4 {
+  z-index: 17;
 }

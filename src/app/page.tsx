@@ -57,7 +57,7 @@ export default function Home() {
             <h1 className="title">{obj.workExperience}</h1>
             <div className="workeduc-box">
             {
-              works.map((item) => 
+              works.work1.map((item) => 
                 <div key={item.id}  className="workeduc-content">
                   <span className="year">
                     <Icon icon="fa:calendar" />{item.year}
@@ -80,10 +80,62 @@ export default function Home() {
           </div>
           {/* page 2 education */}
           <div className="page-back">
-          <h1 className="title">{obj.projectExperience}</h1>
             <div className="workeduc-box">
             {
-              projects.map((item) => 
+              works.work2.map((item) => 
+                <div key={item.id}  className="workeduc-content">
+                  <span className="year">
+                    <Icon icon="fa:calendar" />{item.year}
+                  </span>
+                  <h3><b>{item.company}</b> - {item.position}</h3>
+                  <ul>
+                    {
+                      item.works.map((work, index) => <li key={index}><b>{work.title}</b>:{work.content}</li>)
+                    }
+                  </ul>
+                </div>
+              )
+            }
+            </div>
+            
+            <span className="number-page">2</span>
+
+            <span className="nextprev-btn back" onClick={() => handlePage(0, "1")}>
+              <Icon icon="fa:angle-left" />
+            </span>
+          </div>
+        </div>
+        <div className="book-page page-right" id="turn-2">
+          <div className="page-front">
+            <div className="workeduc-box">
+            {
+              works.work3.map((item) => 
+                <div key={item.id}  className="workeduc-content">
+                  <span className="year">
+                    <Icon icon="fa:calendar" />{item.year}
+                  </span>
+                  <h3><b>{item.company}</b> - {item.position}</h3>
+                  <ul>
+                    {
+                      item.works.map((work, index) => <li key={index}><b>{work.title}</b>:{work.content}</li>)
+                    }
+                  </ul>
+                </div>
+              )
+            }
+            </div>
+            
+            <span className="number-page">3</span>
+
+            <span className="nextprev-btn" onClick={() => handlePage(1, "2")}>
+              <Icon icon="fa:angle-right" />
+            </span>
+          </div>
+          <div className="page-back">
+            <h1 className="title">{obj.projectExperience}</h1>
+            <div className="workeduc-box">
+            {
+              projects.project1.map((item) => 
                 <div key={item.id}  className="workeduc-content">
                   <span className="year">
                     <Icon icon="fa:calendar" />{item.year}
@@ -97,14 +149,64 @@ export default function Home() {
               )
             }
             </div>
-            <span className="number-page">2</span>
+            
+            <span className="number-page">4</span>
 
-            <span className="nextprev-btn back" onClick={() => handlePage(0, "1")}>
+            <span className="nextprev-btn back" onClick={() => handlePage(2, "2")}>
               <Icon icon="fa:angle-left" />
             </span>
           </div>
         </div>
-        <div className="book-page page-right" id="turn-2">
+        <div className="book-page page-right" id="turn-3">
+          <div className="page-front">
+            <div className="workeduc-box">
+              {
+                projects.project2.map((item) => 
+                  <div key={item.id}  className="workeduc-content">
+                    <span className="year">
+                      <Icon icon="fa:calendar" />{item.year}
+                    </span>
+                    <h3><b>{item.project}</b></h3>
+                    <p><b>{obj.projectDesc}</b> : {item.projectDesc}</p>
+                    <p><b>{obj.responsibility}</b> : {item.responsibility}</p>
+                    <p><b>{obj.achiev}</b> : </p>
+                    {Array.isArray(item.achiev) ? item.achiev.map((item, i) => <p key={i}>{item}</p>) : <p>{item.achiev}</p>}
+                  </div>
+                )
+              }
+            </div>
+            <span className="number-page">5</span>
+
+            <span className="nextprev-btn" onClick={() => handlePage(3, "3")}>
+              <Icon icon="fa:angle-right" />
+            </span>
+          </div>
+          <div className="page-back">
+            <div className="workeduc-box">
+              {
+                projects.project3.map((item) => 
+                  <div key={item.id}  className="workeduc-content">
+                    <span className="year">
+                      <Icon icon="fa:calendar" />{item.year}
+                    </span>
+                    <h3><b>{item.project}</b></h3>
+                    <p><b>{obj.projectDesc}</b> : {item.projectDesc}</p>
+                    <p><b>{obj.responsibility}</b> : {item.responsibility}</p>
+                    <p><b>{obj.achiev}</b> : </p>
+                    {Array.isArray(item.achiev) ? item.achiev.map((item, i) => <p key={i}>{item}</p>) : <p>{item.achiev}</p>}
+                  </div>
+                )
+              }
+            </div>
+            
+            <span className="number-page">6</span>
+
+            <span className="nextprev-btn back" onClick={() => handlePage(4, "3")}>
+              <Icon icon="fa:angle-left" />
+            </span>
+          </div>
+        </div>
+        <div className="book-page page-right" id="turn-4">
           <div className="page-front">
             <h1 className="title">{obj.education}</h1>
             <div className="workeduc-box">
@@ -121,9 +223,9 @@ export default function Home() {
               )
             }
             </div>
-            <span className="number-page">3</span>
+            <span className="number-page">7</span>
 
-            <span className="nextprev-btn" onClick={() => handlePage(1, "2")}>
+            <span className="nextprev-btn" onClick={() => handlePage(5, "4")}>
               <Icon icon="fa:angle-right" />
             </span>
           </div>
@@ -165,11 +267,10 @@ export default function Home() {
                 </div>
               </div> */}
             </div>
-            
-            <span className="number-page">4</span>
+            <span className="number-page">8</span>
 
-            <span className="nextprev-btn back" onClick={() => handlePage(2, "2")}>
-              <Icon icon="fa:angle-left" />
+            <span className="nextprev-btn" onClick={() => handlePage(6, "4")}>
+              <Icon icon="fa:angle-right" />
             </span>
           </div>
         </div>
