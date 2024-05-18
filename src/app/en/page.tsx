@@ -2,9 +2,9 @@
 import { Icon } from '@iconify/react';
 import Image from "next/image";
 import obj from "@/i18n/en.json";
-import works from "@/mock/work-experience.json"
-import projects from "@/mock/project-experience.json"
-import edus from "@/mock/educationsEn.json"
+import works from "@/mock/work-experience-en.json"
+import projects from "@/mock/project-experience-en.json"
+import edus from "@/mock/educations-en.json"
 
 export default function Home() {
   const handlePage = (index: number, id: string) => {
@@ -56,21 +56,18 @@ export default function Home() {
           <div className="page-front">
             <h1 className="title">{obj.workExperience}</h1>
             <div className="workeduc-box">
-            {
-              works.work1.map((item) => 
-                <div key={item.id}  className="workeduc-content">
-                  <span className="year">
-                    <Icon icon="fa:calendar" />{item.year}
-                  </span>
-                  <h3><b>{item.company}</b> - {item.position}</h3>
-                  <ul>
-                    {
-                      item.works.map((work, index) => <li key={index}><b>{work.title}</b>:{work.content}</li>)
-                    }
-                  </ul>
-                </div>
-              )
-            }
+              <div key={works.work1.id}  className="workeduc-content">
+                <span className="year">
+                  <Icon icon="fa:calendar" />{works.work1.year}
+                </span>
+                <h3><b>{works.work1.company}</b> - {works.work1.position}</h3>
+                <p>{obj.jobDesc}:{works.work1.jobDesc}</p>
+                <ul>
+                  {
+                    works.work1.works.map((work, index) => <li key={index}><b>{work.title}</b>:{work.content}</li>)
+                  }
+                </ul>
+              </div>
             </div>
             <span className="number-page">1</span>
 
@@ -81,21 +78,17 @@ export default function Home() {
           {/* page 2 education */}
           <div className="page-back">
             <div className="workeduc-box">
-            {
-              works.work2.map((item) => 
-                <div key={item.id}  className="workeduc-content">
-                  <span className="year">
-                    <Icon icon="fa:calendar" />{item.year}
-                  </span>
-                  <h3><b>{item.company}</b> - {item.position}</h3>
-                  <ul>
-                    {
-                      item.works.map((work, index) => <li key={index}><b>{work.title}</b>:{work.content}</li>)
-                    }
-                  </ul>
-                </div>
-              )
-            }
+              <div key={works.work2.id}  className="workeduc-content">
+                <span className="year">
+                  <Icon icon="fa:calendar" />{works.work2.year}
+                </span>
+                <h3><b>{works.work2.company}</b> - {works.work2.position}</h3>
+                <ul>
+                  {
+                    works.work2.works.map((work, index) => <li key={index}><b>{work.title}</b>:{work.content}</li>)
+                  }
+                </ul>
+              </div>
             </div>
             
             <span className="number-page">2</span>
@@ -108,26 +101,67 @@ export default function Home() {
         <div className="book-page page-right" id="turn-2">
           <div className="page-front">
             <div className="workeduc-box">
-            {
-              works.work3.map((item) => 
-                <div key={item.id}  className="workeduc-content">
-                  <span className="year">
-                    <Icon icon="fa:calendar" />{item.year}
-                  </span>
-                  <h3><b>{item.company}</b> - {item.position}</h3>
-                  <ul>
-                    {
-                      item.works.map((work, index) => <li key={index}><b>{work.title}</b>:{work.content}</li>)
-                    }
-                  </ul>
-                </div>
-              )
-            }
+              <div key={works.work3.id}  className="workeduc-content">
+                <span className="year">
+                  <Icon icon="fa:calendar" />{works.work3.year}
+                </span>
+                <h3><b>{works.work3.company}</b> - {works.work3.position}</h3>
+                <ul>
+                  {
+                    works.work3.works.map((work, index) => <li key={index}><b>{work.title}</b>:{work.content}</li>)
+                  }
+                </ul>
+              </div>
             </div>
             
             <span className="number-page">3</span>
 
             <span className="nextprev-btn" onClick={() => handlePage(1, "2")}>
+              <Icon icon="fa:angle-right" />
+            </span>
+          </div>
+          <div className="page-back">
+            <div className="workeduc-box">
+              <div key={works.work4.id}  className="workeduc-content">
+                <span className="year">
+                  <Icon icon="fa:calendar" />{works.work4.year}
+                </span>
+                <h3><b>{works.work4.company}</b> - {works.work4.position}</h3>
+                <ul>
+                  {
+                    works.work4.works.map((work, index) => <li key={index}><b>{work.title}</b>:{work.content}</li>)
+                  }
+                </ul>
+              </div>
+            </div>
+            
+            
+            <span className="number-page">4</span>
+
+            <span className="nextprev-btn back" onClick={() => handlePage(2, "2")}>
+              <Icon icon="fa:angle-left" />
+            </span>
+          </div>
+        </div>
+        <div className="book-page page-right" id="turn-3">
+          <div className="page-front">
+          <div className="workeduc-box">
+              <div key={works.work5.id}  className="workeduc-content">
+                <span className="year">
+                  <Icon icon="fa:calendar" />{works.work5.year}
+                </span>
+                <h3><b>{works.work5.company}</b> - {works.work5.position}</h3>
+                <ul>
+                  {
+                    works.work5.works.map((work, index) => <li key={index}><b>{work.title}</b>:{work.content}</li>)
+                  }
+                </ul>
+              </div>
+            </div>
+           
+            <span className="number-page">5</span>
+
+            <span className="nextprev-btn" onClick={() => handlePage(3, "3")}>
               <Icon icon="fa:angle-right" />
             </span>
           </div>
@@ -150,14 +184,15 @@ export default function Home() {
             }
             </div>
             
-            <span className="number-page">4</span>
+            
+            <span className="number-page">6</span>
 
-            <span className="nextprev-btn back" onClick={() => handlePage(2, "2")}>
+            <span className="nextprev-btn back" onClick={() => handlePage(4, "3")}>
               <Icon icon="fa:angle-left" />
             </span>
           </div>
         </div>
-        <div className="book-page page-right" id="turn-3">
+        <div className="book-page page-right" id="turn-4">
           <div className="page-front">
             <div className="workeduc-box">
               {
@@ -175,9 +210,10 @@ export default function Home() {
                 )
               }
             </div>
-            <span className="number-page">5</span>
+            
+            <span className="number-page">7</span>
 
-            <span className="nextprev-btn" onClick={() => handlePage(3, "3")}>
+            <span className="nextprev-btn" onClick={() => handlePage(5, "4")}>
               <Icon icon="fa:angle-right" />
             </span>
           </div>
@@ -198,15 +234,14 @@ export default function Home() {
                 )
               }
             </div>
-            
-            <span className="number-page">6</span>
+            <span className="number-page">8</span>
 
-            <span className="nextprev-btn back" onClick={() => handlePage(4, "3")}>
+            <span className="nextprev-btn back" onClick={() => handlePage(6, "4")}>
               <Icon icon="fa:angle-left" />
             </span>
           </div>
         </div>
-        <div className="book-page page-right" id="turn-4">
+        <div className="book-page page-right" id="turn-5">
           <div className="page-front">
             <h1 className="title">{obj.education}</h1>
             <div className="workeduc-box">
@@ -218,13 +253,14 @@ export default function Home() {
                   </span>
                   <p><b>{item.attr}</b></p>
                   <h3><b>{item.master}</b> - {item.school}</h3>
+                  {item.desc && <p>{item.desc}</p>}
                 </div>
               )
             }
             </div>
-            <span className="number-page">7</span>
+            <span className="number-page">9</span>
 
-            <span className="nextprev-btn" onClick={() => handlePage(5, "4")}>
+            <span className="nextprev-btn" onClick={() => handlePage(7, "5")}>
               <Icon icon="fa:angle-right" />
             </span>
           </div>
@@ -266,9 +302,9 @@ export default function Home() {
                 </div>
               </div> */}
             </div>
-            <span className="number-page">8</span>
+            <span className="number-page">10</span>
 
-            <span className="nextprev-btn back" onClick={() => handlePage(6, "4")}>
+            <span className="nextprev-btn back" onClick={() => handlePage(8, "5")}>
               <Icon icon="fa:angle-left" />
             </span>
           </div>

@@ -1,0 +1,16 @@
+[
+    {
+        "id": "edu001",
+        "year": "2011/09-2015/06",
+        "master": "Computer Science and Technology",
+        "school": "ShaoGuan University",
+        "attr": "Bachelor's Degree"
+    },{
+        "id": "edu002",
+        "year": "2023/09-2026/01",
+        "master": "Master of Engineering Management",
+        "school": "East China Normal University",
+        "attr": "Master's Degree",
+        "desc": "Shanghai International Chief Technology Officer Institute, adhering to the concept of 'Innovation Changes the World', constructing an integrated education system of science, technology, and business, deeply integrating industry, academia, and research, focusing on cultivating management and technology compound elites for the new AI era."
+    }
+]

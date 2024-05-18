@@ -63,6 +63,7 @@ export default function Home() {
                     <Icon icon="fa:calendar" />{item.year}
                   </span>
                   <h3><b>{item.company}</b> - {item.position}</h3>
+                  <p>{obj.jobDesc}:{item.jobDesc}</p>
                   <ul>
                     {
                       item.works.map((work, index) => <li key={index}><b>{work.title}</b>:{work.content}</li>)

@@ -99,6 +99,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  font-size: .8rem;
 }
 
 .profile-page img {

@@ -1,0 +1,46 @@
+{
+    "project1": [
+        {
+            "id": "work001",
+            "year": "2022/10-2023/10",
+            "project": "AI Sports",
+            "projectDesc": "A mini-program based on AI technology aimed at solving physical education training issues for primary and secondary school students. The project utilizes human pose recognition technology for motion detection, identifying the correctness of students' training techniques and movements.",
+            "responsibility": "Responsible for technical selection, business process clarification, and function module design. Developed a development plan and used Taro/React for development implementation. Regularly participated in requirement analysis meetings to determine the product direction and provide feasible solutions to identified issues.",
+            "achiev": [
+                "1. Technical Implementation and Optimization:Designed and developed a customized component library, significantly increasing code reuse rate and development efficiency, resulting in a 30% increase in iteration speed.Deeply optimized key performance indicators, reducing the first screen loading time by 50% through proper layout.",
+               "2. Functional Innovation and Highlights:Independently designed and implemented a personalized training recommendation system based on human recognition, dynamically generating training plans according to users' physical fitness test results and historical records, enhancing user experience and stickiness."
+            ]
+        }
+    ],
+    "project2": [
+        {
+            "id": "work002",
+            "year": "2021/09-2022/09",
+            "project": "Alarm Management Project",
+            "projectDesc": " A warning management system developed by Vision Energy for large energy enterprises.",
+            "responsibility": "Participated in PRD, interaction, and development review meetings every month, providing product design suggestions.",
+            "achiev": "Completed the frontend development plan on time, implementing six modules including alarm operation console and alarm rules."
+        },{
+            "id": "work003",
+            "year": "2019/03-2020/08",
+            "project": "MetLifeiMap2.0 Agent MarkeKng PlaWorm",
+            "projectDesc": "An iPad project used for internal agent appointments in China and the United States Joint Metropolitan, designed for customers to fill out insurance forms, based on an H5 app so[ware.",
+            "responsibility": "Responsible for business process clarification, functional module design, and development plan formulation. Addressed various issues encountered during development, collaborated with product managers on requirements, participated in requirement review meetings, and provided feasibility suggestions.",
+            "achiev": " Independently developed and completed the construction of the product from scratch in one year, responsible for the design and development of one core module and three basic modules."
+        }
+    ],
+    "project3": [
+        {
+            "id": "work004",
+            "year": "2017/01-2019/01",
+            "project": "Chinahomelife247",
+            "projectDesc": "The main business direction is the purchaser side project of the cross-border trade comprehensive service pla`orm in 'Belt and Road' countries laid out by China, cooperating with the company's exhibition business for project development.",
+            "responsibility": " Entered the project in its initial stage, initially developed PC-side web pages without using frontend-backend separation mode, using HTML, CSS, JS, jQuery for static page development, and backend control layer code writing. In the later stage, upgraded the pla`orm using React for development, responsible for responsive web development and problem-solving during development.",
+            "achiev": [
+                "1. Built projects using React based on product requirements and prototypes, responsible for static page production, widget writing, business process, user experience testing, product iteration optimization, and project packaging. Completed a total of 8 projects involving both PC and mobile terminals.",
+                "2. Addressed and promptly resolved various technical issues encountered during product development, including: form data storage issues, SEO, browser return event issues, etc. Projects under responsibility were launched and applied on time without major incidents. ",
+                "3. Cooperated with the company's exhibition department to provide technical support for the required H5 pages, promotional materials, etc., for 13 exhibitions annually."
+            ]
+        }
+    ]
+}

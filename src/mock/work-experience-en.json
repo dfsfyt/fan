@@ -1,0 +1,111 @@
+{
+    "work1": {
+        "id": "work001",
+        "year": "2022/10-2023/10",
+        "position": "Front-End Leader",
+        "company": "Shanghai Neogient Intelligent Technology Co., Ltd.",
+        "jobDesc": "As a core developer, responsible for the implementation of features, technical research, and requirement positioning on the mini-program side.",
+        "works": [
+            {
+                "title": "Frontend Development",
+                "content": "Responsible for the development and maintenance of WeChat mini-programs and H5 pages, completing design, development, and testing tasks according to requirements; optimizing page performance to improve user experience, ensuring smoothness and stability."
+            },
+            {
+                "title": "Requirement Review",
+                "content": " Collaborated closely with UI designers, product managers, and other team members to ensure that page design and functionality meet user requirements."
+            },
+            {
+                "title": "Deployment and Release",
+                "content": "Responsible for the deployment and release of mini-programs and H5 pages, ensuring their security and stability."
+            }
+        ]
+    }, 
+    "work2": {
+        "id": "work002",
+        "year": "2020/10-2022/08",
+        "position": "Front-End Leader & PM",
+        "company": "Shanghai Chenqiao Intelligent Technology Co., Ltd.",
+        "jobDesc": "As a frontend engineer, primarily responsible for project development on the PC side, while also undertaking project management tasks.",
+        "works": [
+            {
+                "title": "Design and Development",
+                "content": "Utilized React for frontend development tasks, concurrently serving as Scrum Master, designed and implemented the monitoring center project, developed features such as alarm management, user management, device management, notification management, and obtained so[ware copyright for the project."
+            },
+            {
+                "title": "Progress Management",
+                "content": " Conducted daily work meetings to summarize project progress and coordinate resolution of related issues, ensuring the project proceeded as scheduled."
+            },
+            {
+                "title": "Research and Testing",
+                "content": "Participated in the selection and testing of intelligent watches, and product functionality testing, supporting the overall completion of the project."
+            }
+        ]
+    },
+    "work3": {
+        "id": "work003",
+        "year": "2019/03-2020/08",
+        "position": "Front-End Developer",
+        "company": "MetLife Insurance Co., Ltd.",
+        "jobDesc": "Primarily responsible for frontend design and development work for the China and the United States Joint Metropolitan MetLifeiMap 2.0 project. Entered the project in its initial stage, completed the project's launch and deployment, and received commendation for creating the fewest bugs in the intelligent underwriting module.",
+        "works": [
+            {
+                "title": "Requirement Review",
+                "content": "Aligned with product managers, participated in requirement review meetings, analyzed the feasibility of requirement documents and product prototype designs, identified technical difficulties and risk issues, marked key points, and proposed solutions to optimize the overall product plan."
+            },
+            {
+                "title": "Product Feature Design",
+                "content": "Developed business design plans and frontend development plans for four modules based on requirement documents, including basic notification modules, personal tax modules, intelligent underwriting modules, and questionnaire modules, designing business processes for product prototypes and functionalities."
+            },
+            {
+                "title": "Frontend Development",
+                "content": "Adopted agile development principles, used React for frontend development, with a two-week iteration cycle, completed system development from scratch, and was in the trial application phase."
+            },
+            {
+                "title": "Core Module Development",
+                "content": "Led the design, development, and management of the core module—intelligent underwriting module of the system, established a frontend team, assigned work tasks, integrated third-party data resources for unique insurance types, processed data, designed data structures, and completed interface rendering, smoothly achieving data visualization display."
+            }
+        ]
+    },
+    "work4": {
+        "id": "work004",
+        "year": "2017/01-2019/01",
+        "position": "Front-End Developer",
+        "company": "Zhejiang Meorient Business ExhibiKon Co., Ltd.",
+        "jobDesc": "Cooperated with the company's exhibition business for project development, completed a total of eight projects involving both PC and mobile terminals, including pla`orms for suppliers and buyers, exhibition registration and check-in systems, and operation systems.",
+        "works": [
+            {
+                "title": "Frontend Development",
+                "content": "Built projects using React based on product requirements and prototypes, responsible for static page production, widget writing, business process, user experience testing, product iteration optimization, and project packaging, completing eight projects involving both PC and mobile terminals."
+            },
+            {
+                "title": "Overcoming Challenges",
+                "content": " Addressed and quickly resolved various technical issues encountered during product development, including form data storage issues, search page DOM structure issues, return event issues, and control issues with built-in clearing functions. Projects under responsibility were launched and applied on time without major incidents."
+            },
+            {
+                "title": "Technical Support",
+                "content": "Cooperated with the company's exhibition department to provide technical support such as H5 pages and promotional materials for exhibitions, with 13 exhibitions held annually."
+            }
+        ]
+    },
+    "work5": {
+        "id": "work005",
+        "year": "2015/03-2017/05",
+        "position": "Front-End Developer & Operation Management",
+        "company": "(Startup)Henan Yiheng Technology Co., Ltd.",
+        "jobDesc": "One of the founders of the startup company, mainly responsible for product technical research and development, design, testing, and operations.",
+        "works": [
+            {
+                "title": "Technical Development",
+                "content": "Designed and implemented product architecture, independently developed and maintained frontend pages using HTML, CSS, JavaScript, Bootstrap, etc."
+            },
+            {
+                "title": "Testing Management",
+                "content": "Designed and executed comprehensive test plans covering functional testing, performance testing, compatibility testing, and user experience testing, ensuring product quality."
+            },
+            {
+                "title": "Operations and Promotion",
+                "content": "Developed and executed multi-channel marketing strategies, achieved a 300% increase in user base within six months through SEO optimization, social media advertising, content marketing, etc. Used tracking tools for data analysis, tracked user behavior, adjusted product features and promotion strategies accordingly, and improved user conversion rates."
+            }
+        ]
+    }
+}
