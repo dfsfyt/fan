@@ -269,8 +269,8 @@ export default function Home() {
             </div>
             <span className="number-page">8</span>
 
-            <span className="nextprev-btn" onClick={() => handlePage(6, "4")}>
-              <Icon icon="fa:angle-right" />
+            <span className="nextprev-btn back" onClick={() => handlePage(6, "4")}>
+              <Icon icon="fa:angle-left" />
             </span>
           </div>
         </div>
